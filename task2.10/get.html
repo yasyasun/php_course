@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET Request</title>
+    <script src="get.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1 style="text-align: center;">Список пользователей</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Имя</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody">
+            <!-- Пользователи будут добавлены сюда -->
+        </tbody>
+    </table>
+    <div id="editModal" style="display:none;">
+        <div style="background-color:white; padding:20px; border:1px solid #000;">
+            <h2 style="text-align: center;">Редактировать пользователя</h2>
+            <form id="editForm">
+                <label for="editName">Имя:</label>
+                <input type="text" id="editName" name="editName" required>
+                <label for="editEmail">Email:</label>
+                <input type="email" id="editEmail" name="editEmail" required>
+                <button type="submit">Сохранить изменения</button>
+                <button type="button" id="closeModal">Закрыть</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
